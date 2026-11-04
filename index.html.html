@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="bn" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>স্বপ্না IT সেন্টার - Swapna IT Center</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Font: Hind Siliguri & Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Hind Siliguri', 'Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        .hero-gradient {
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 50%, #60a5fa 100%);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans antialiased">
+
+    <!-- Top Bar -->
+    <div class="bg-blue-900 text-white text-sm py-2 px-4">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-2">
+            <div class="flex flex-wrap justify-center md:justify-start items-center gap-4 text-xs sm:text-sm">
+                <span><i class="fas fa-phone-alt mr-1.5 text-blue-300"></i>হটলাইন: ০৯৩৭১৯০০০১১</span>
+                <span><i class="fas fa-envelope mr-1.5 text-blue-300"></i>sopna.it.info@gmail.com</span>
+                <span><i class="fas fa-map-marker-alt mr-1.5 text-blue-300"></i>শালবন মিস্ত্রিপাড়া মোড়, রংপুর</span>
+            </div>
+            <div class="flex items-center gap-3">
+                <a href="#" class="hover:text-blue-300 transition"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="hover:text-blue-300 transition"><i class="fab fa-youtube"></i></a>
+                <a href="#" class="hover:text-blue-300 transition"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <header class="sticky top-0 z-50 bg-white shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="w-12 h-12 rounded-xl bg-blue-600 text-white flex items-center justify-center text-2xl font-bold shadow-lg shadow-blue-500/30">
+                    স
+                </div>
+                <div>
+                    <span class="text-2xl font-bold text-blue-900 block leading-tight">স্বপ্না IT সেন্টার</span>
+                    <span class="text-xs text-blue-600 font-medium tracking-wider">GRAPHICS & SOFTWARE TRAINING</span>
+                </div>
+            </div>
+            
+            <nav class="hidden md:flex items-center gap-8 font-medium">
+                <a href="#home" class="text-blue-600 hover:text-blue-800 transition">হোম</a>
+                <a href="#services" class="text-gray-600 hover:text-blue-600 transition">সেবাসমূহ</a>
+                <a href="#courses" class="text-gray-600 hover:text-blue-600 transition">কোর্সসমূহ</a>
+                <a href="#about" class="text-gray-600 hover:text-blue-600 transition">আমাদের সম্পর্কে</a>
+                <a href="#contact" class="text-gray-600 hover:text-blue-600 transition">যোগাযোগ</a>
+            </nav>
+
+            <div class="hidden md:block">
+                <a href="#contact" class="bg-blue-600 hover:bg-blue-700 text-white font-medium px-5 py-2.5 rounded-xl shadow-lg shadow-blue-500/20 transition transform hover:-translate-y-0.5">ভর্তি হোন</a>
+            </div>
+
+            <!-- Mobile Menu Toggle Button -->
+            <button id="menu-btn" class="md:hidden text-gray-700 focus:outline-none text-2xl">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t px-4 pt-2 pb-4 space-y-2">
+            <a href="#home" class="block py-2 text-blue-600 font-medium">হোম</a>
+            <a href="#services" class="block py-2 text-gray-600">সেবাসমূহ</a>
+            <a href="#courses" class="block py-2 text-gray-600">কোর্সসমূহ</a>
+            <a href="#about" class="block py-2 text-gray-600">আমাদের সম্পর্কে</a>
+            <a href="#contact" class="block py-2 text-gray-600">যোগাযোগ</a>
+            <a href="#contact" class="block text-center bg-blue-600 text-white py-2.5 rounded-xl mt-2 font-medium">ভর্তি হোন</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-gradient text-white py-20 lg:py-32 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div class="space-y-6 text-center lg:text-left">
+                <span class="inline-block bg-blue-500/30 text-blue-100 px-4 py-1.5 rounded-full text-sm font-medium border border-blue-400/30 backdrop-blur-sm">
+                    ✨ সেরা আইটি ট্রেনিং ও সার্ভিস সেন্টার
+                </span>
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight">
+                    গ্রাফিক্স ডিজাইন, সফটওয়্যার ও আইটি ট্রেনিং
+                </h1>
+                <p class="text-blue-100 text-lg sm:text-xl max-w-xl mx-auto lg:mx-0">
+                    আধুনিক প্রযুক্তি ও প্রফেশনাল স্কিল শিখে আপনার ক্যারিয়ার গড়ে তুলুন স্বপ্নের চূড়ায়। আমরা দিচ্ছি বিশ্বমানের ট্রেনিং ও সার্ভিস।
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center lg:justify-start gap-4 pt-4">
+                    <a href="#courses" class="bg-white text-blue-900 font-bold px-8 py-4 rounded-xl shadow-xl hover:bg-blue-50 transition transform hover:-translate-y-0.5 text-center">
+                        কোর্স সমূহ দেখুন
+                    </a>
+                    <a href="#contact" class="bg-transparent border-2 border-white text-white font-bold px-8 py-4 rounded-xl hover:bg-white/10 transition text-center">
+                        যোগাযোগ করুন
+                    </a>
+                </div>
+            </div>
+            <div class="flex justify-center">
+                <div class="bg-white/10 backdrop-blur-md p-8 rounded-3xl border border-white/20 shadow-2xl max-w-md w-full space-y-6">
+                    <div class="flex items-center gap-4">
+                        <div class="w-14 h-14 rounded-2xl bg-blue-500 flex items-center justify-center text-white text-2xl shadow-inner">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold">প্রফেশনাল কোর্স</h3>
+                            <p class="text-blue-200 text-sm">১০০% প্র্যাকটিক্যাল ক্লাস ও লাইভ প্রজেক্ট</p>
+                        </div>
+                    </div>
+                    <div class="space-y-3 pt-2">
+                        <div class="flex items-center gap-3 bg-white/5 p-3 rounded-xl">
+                            <i class="fas fa-check-circle text-green-400 text-lg"></i>
+                            <span class="font-medium">গ্রাফিক্স ডিজাইন ও ইউআই/ইউএক্স</span>
+                        </div>
+                        <div class="flex items-center gap-3 bg-white/5 p-3 rounded-xl">
+                            <i class="fas fa-check-circle text-green-400 text-lg"></i>
+                            <span class="font-medium">সফটওয়্যার ও ওয়েব ডেভেলপমেন্ট</span>
+                        </div>
+                        <div class="flex items-center gap-3 bg-white/5 p-3 rounded-xl">
+                            <i class="fas fa-check-circle text-green-400 text-lg"></i>
+                            <span class="font-medium">ডিজিটাল মার্কেটিং ও ফ্রিল্যান্সিং</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto space-y-3 mb-16">
+                <span class="text-blue-600 font-semibold tracking-wider text-sm uppercase">আমাদের সেবাসমূহ</span>
+                <h2 class="text-3xl sm:text-4xl font-bold text-gray-900">আপনার ব্যবসার জন্য সেরা আইটি সলিউশন</h2>
+                <p class="text-gray-600">আমরা আধুনিক প্রযুক্তি ব্যবহার করে আপনার ব্যবসার ডিজিটাল রূপান্তর নিশ্চিত করি।</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-gray-50 border border-gray-100 rounded-2xl p-8 shadow-sm hover:shadow-xl transition group">
+                    <div class="w-16 h-16 rounded-2xl bg-blue-100 text-blue-600 flex items-center justify-center text-3xl mb-6 group-hover:bg-blue-600 group-hover:text-white transition">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">গ্রাফিক্স ডিজাইন</h3>
+                    <p class="text-gray-600 leading-relaxed">লোগো ডিজাইন, ব্র্যান্ডিং, ব্যানার, সোশ্যাল মিডিয়া পোস্ট এবং প্রফেশনাল প্রিন্ট ডিজাইন সার্ভিস।</p>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-gray-50 border border-gray-100 rounded-2xl p-8 shadow-sm hover:shadow-xl transition group">
+                    <div class="w-16 h-16 rounded-2xl bg-blue-100 text-blue-600 flex items-center justify-center text-3xl mb-6 group-hover:bg-blue-600 group-hover:text-white transition">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">সফটওয়্যার ডেভেলপমেন্ট</h3>
+                    <p class="text-gray-600 leading-relaxed">কাস্টম সফটওয়্যার, ই-কমার্স ওয়েবসাইট এবং বিজনেস অটোমেশন সলিউশন তৈরি।</p>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-gray-50 border border-gray-100 rounded-2xl p-8 shadow-sm hover:shadow-xl transition group">
+                    <div class="w-16 h-16 rounded-2xl bg-blue-100 text-blue-600 flex items-center justify-center text-3xl mb-6 group-hover:bg-blue-600 group-hover:text-white transition">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">আইটি ট্রেনিং প্রোগ্রাম</h3>
+                    <p class="text-gray-600 leading-relaxed">অভিজ্ঞ মেন্টরদের তত্ত্বাবধানে হাতে-কলমে প্রফেশনাল আইটি কোর্স ও জব প্লেসমেন্ট সহায়তা।</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto space-y-3 mb-16">
+                <span class="text-blue-600 font-semibold tracking-wider text-sm uppercase">আমাদের কোর্সসমূহ</span>
+                <h2 class="text-3xl sm:text-4xl font-bold text-gray-900">ক্যারিয়ার গড়ার জনপ্রিয় কোর্সসমূহ</h2>
+                <p class="text-gray-600">দক্ষ হয়ে উঠুন বর্তমান যুগের চাহিদাসম্পন্ন প্রযুক্তিতে।</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Course 1 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition border border-gray-100 flex flex-col">
+                    <div class="bg-blue-600 text-white p-6 relative">
+                        <span class="absolute top-4 right-4 bg-white/20 text-xs px-3 py-1 rounded-full font-medium">৩ মাস</span>
+                        <h3 class="text-xl font-bold">প্রফেশনাল গ্রাফিক্স ডিজাইন</h3>
+                        <p class="text-blue-100 text-sm mt-1">ইলাস্ট্রেটর, ফটোশপ ও ব্র্যান্ডিং</p>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between space-y-6">
+                        <ul class="space-y-3 text-sm text-gray-600">
+                            <li><i class="fas fa-check text-blue-600 mr-2"></i> লোগো ও ব্র্যান্ড আইডেন্টিটি</li>
+                            <li><i class="fas fa-check text-blue-600 mr-2"></i> সোশ্যাল মিডিয়া ব্যানার ডিজাইন</li>
+                            <li><i class="fas fa-check text-blue-600 mr-2"></i> ফ্রিল্যান্সিং গাইডলাইন</li>
+                        </ul>
+                        <div class="pt-4 border-t flex items-center justify-between">
+                            <span class="text-lg font-bold text-blue-600">ফি: ৫,০০০৳</span>
+                            <a href="#contact" class="bg-blue-600 hover:bg-blue-700 text-white text-sm px-4 py-2 rounded-xl transition font-medium">ভর্তি হন</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course 2 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition border border-gray-100 flex flex-col">
+                    <div class="bg-blue-700 text-white p-6 relative">
+                        <span class="absolute top-4 right-4 bg-white/20 text-xs px-3 py-1 rounded-full font-medium">৬ মাস</span>
+                        <h3 class="text-xl font-bold">ওয়েব ডিজাইন ও ডেভেলপমেন্ট</h3>
+                        <p class="text-blue-100 text-sm mt-1">HTML, CSS, JavaScript, PHP</p>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between space-y-6">
+                        <ul class="space-y-3 text-sm text-gray-600">
+                            <li><i class="fas fa-check text-blue-600 mr-2"></i> রেসপন্সিভ ওয়েব ডিজাইন</li>
+                            <li><i class="fas fa-check text-blue-600 mr-2"></i> ওয়ার্ডপ্রেস থিম কাস্টমাইজেশন</li>
+                            <li><i class="fas fa-check text-blue-600 mr-2"></i> লাইভ প্রজেক্ট ওয়ার্ক</li>
+                        </ul>
+                        <div class="pt-4 border-t flex items-center justify-between">
+                            <span class="text-lg font-bold text-blue-600">ফি: ১০,০০০৳</span>
+                            <a href="#contact" class="bg-blue-600 hover:bg-blue-700 text-white text-sm px-4 py-2 rounded-xl transition font-medium">ভর্তি হন</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course 3 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition border border-gray-100 flex flex-col">
+                    <div class="bg-indigo-700 text-white p-6 relative">
+                        <span class="absolute top-4 right-4 bg-white/20 text-xs px-3 py-1 rounded-full font-medium">৩ মাস</span>
+                        <h3 class="text-xl font-bold">ডিজিটাল মার্কেটিং</h3>
+                        <p class="text-indigo-100 text-sm mt-1">SEO, FB Ads & Social Media</p>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between space-y-6">
+                        <ul class="space-y-3 text-sm text-gray-600">
+                            <li><i class="fas fa-check text-blue-600 mr-2"></i> ফেসবুক ও ইনস্টাগ্রাম মার্কেটিং</li>
+                            <li><i class="fas fa-check text-blue-600 mr-2"></i> সার্চ ইঞ্জিন অপ্টিমাইজেশন (SEO)</li>
+                            <li><i class="fas fa-check text-blue-600 mr-2"></i> লিড জেনারেশন ও স্ট্র্যাটেজি</li>
+                        </ul>
+                        <div class="pt-4 border-t flex items-center justify-between">
+                            <span class="text-lg font-bold text-blue-600">ফি: ৬,০০০৳</span>
+                            <a href="#contact" class="bg-blue-600 hover:bg-blue-700 text-white text-sm px-4 py-2 rounded-xl transition font-medium">ভর্তি হন</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div class="space-y-6">
+                <span class="text-blue-600 font-semibold tracking-wider text-sm uppercase">আমাদের সম্পর্কে</span>
+                <h2 class="text-3xl sm:text-4xl font-bold text-gray-900">স্বপ্না আইটি সেন্টার - দক্ষ ক্যারিয়ার গড়ার বিশ্বস্ত ঠিকানা</h2>
+                <p class="text-gray-600 leading-relaxed">
+                    আমরা দীর্ঘ évek ধরে সফলভাবে আইটি সেবা প্রদান এবং শিক্ষার্থীদের প্রফেশনাল স্কিল ডেভেলপমেন্ট ট্রেনিং দিয়ে আসছি। আমাদের রয়েছে অভিজ্ঞ মেন্টর প্যানেল এবং আধুনিক ল্যাব সুবিধা।
+                </p>
+                <div class="grid grid-cols-2 gap-6 pt-4">
+                    <div class="bg-blue-50 p-4 rounded-2xl border border-blue-100">
+                        <h4 class="text-3xl font-bold text-blue-600 mb-1">৫০০+</h4>
+                        <p class="text-gray-600 text-sm">সফল শিক্ষার্থী</p>
+                    </div>
+                    <div class="bg-blue-50 p-4 rounded-2xl border border-blue-100">
+                        <h4 class="text-3xl font-bold text-blue-600 mb-1">১০০+</h4>
+                        <p class="text-gray-600 text-sm">প্রজেক্ট সম্পন্ন</p>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-gradient-to-br from-blue-600 to-indigo-800 p-8 sm:p-12 rounded-3xl text-white shadow-xl space-y-6">
+                <h3 class="text-2xl font-bold">কেন আমাদের নির্বাচন করবেন?</h3>
+                <ul class="space-y-4">
+                    <li class="flex items-start gap-3">
+                        <i class="fas fa-check-circle text-blue-300 mt-1 text-lg"></i>
+                        <span>১০০% প্র্যাকটিক্যাল ও হ্যান্ডস-অন ট্রেনিং ব্যবস্থা।</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <i class="fas fa-check-circle text-blue-300 mt-1 text-lg"></i>
+                        <span>অভিজ্ঞ ও প্রফেশনাল মেন্টরদের মাধ্যমে ক্লাস পরিচালনা।</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <i class="fas fa-check-circle text-blue-300 mt-1 text-lg"></i>
+                        <span>কোর্স শেষে ইন্টার্নশিপ ও জব প্লেসমেন্টের সুযোগ।</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <i class="fas fa-check-circle text-blue-300 mt-1 text-lg"></i>
+                        <span>লাইফটাইম সাপোর্ট ও আপডেট মেটেরিয়ালস।</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-50 border-t border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto space-y-3 mb-16">
+                <span class="text-blue-600 font-semibold tracking-wider text-sm uppercase">যোগাযোগ করুন</span>
+                <h2 class="text-3xl sm:text-4xl font-bold text-gray-900">আমাদের সাথে যোগাযোগ করুন</h2>
+                <p class="text-gray-600">যেকোনো তথ্য বা কোর্সে ভর্তির জন্য আমাদের সাথে যোগাযোগ করতে নিচের ফর্মটি পূরণ করুন।</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <!-- Contact Info -->
+                <div class="space-y-8">
+                    <div class="flex items-start gap-4">
+                        <div class="w-12 h-12 rounded-xl bg-blue-600 text-white flex items-center justify-center text-xl shrink-0 shadow-md">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-900 text-lg">অফিসের ঠিকানা</h4>
+                            <p class="text-gray-600 mt-1">শালবন মিস্ত্রিপাড়া মোড়, রংপুর</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <div class="w-12 h-12 rounded-xl bg-blue-600 text-white flex items-center justify-center text-xl shrink-0 shadow-md">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-900 text-lg">হটলাইন নম্বর</h4>
+                            <p class="text-gray-600 mt-1">০৯৩৭১৯০০০১১</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <div class="w-12 h-12 rounded-xl bg-blue-600 text-white flex items-center justify-center text-xl shrink-0 shadow-md">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-900 text-lg">ইমেইল এড্রেস</h4>
+                            <p class="text-gray-600 mt-1">sopna.it.info@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="bg-white p-8 rounded-3xl shadow-sm border border-gray-100">
+                    <form onsubmit="event.preventDefault(); showSuccessMessage();" class="space-y-6">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">আপনার নাম</label>
+                            <input type="text" required class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-blue-600 transition" placeholder="আপনার পুরো নাম লিখুন">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">মোবাইল নম্বর</label>
+                            <input type="tel" required class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-blue-600 transition" placeholder="আপনার মোবাইল নম্বর">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">বার্তা বা কোর্স নির্বাচন</label>
+                            <textarea rows="4" required class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-blue-600 transition" placeholder="আপনার বার্তা লিখুন..."></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3.5 rounded-xl shadow-lg shadow-blue-500/20 transition">
+                            বার্তা পাঠান
+                        </button>
+                    </form>
+                    <div id="success-msg" class="hidden mt-4 p-4 bg-green-50 text-green-700 rounded-xl text-center font-medium">
+                        ধন্যবাদ! আপনার বার্তা সফলভাবে পাঠানো হয়েছে।
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+            <div class="space-y-4">
+                <h3 class="text-2xl font-bold">স্বপ্না IT সেন্টার</h3>
+                <p class="text-gray-400 text-sm">গ্রাফিক্স ডিজাইন, সফটওয়্যার ডেভেলপমেন্ট এবং প্রফেশনাল আইটি ট্রেনিং সেন্টার।</p>
+            </div>
+            <div class="space-y-4">
+                <h4 class="font-bold text-lg">গুরুত্বপূর্ণ লিংক</h4>
+                <ul class="space-y-2 text-sm text-gray-400">
+                    <li><a href="#home" class="hover:text-white transition">হোম</a></li>
+                    <li><a href="#services" class="hover:text-white transition">সেবাসমূহ</a></li>
+                    <li><a href="#courses" class="hover:text-white transition">কোর্সসমূহ</a></li>
+                    <li><a href="#contact" class="hover:text-white transition">যোগাযোগ</a></li>
+                </ul>
+            </div>
+            <div class="space-y-4">
+                <h4 class="font-bold text-lg">সোশ্যাল মিডিয়া</h4>
+                <div class="flex gap-4 text-xl">
+                    <a href="#" class="w-10 h-10 rounded-xl bg-gray-800 flex items-center justify-center hover:bg-blue-600 transition"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="w-10 h-10 rounded-xl bg-gray-800 flex items-center justify-center hover:bg-blue-600 transition"><i class="fab fa-youtube"></i></a>
+                    <a href="#" class="w-10 h-10 rounded-xl bg-gray-800 flex items-center justify-center hover:bg-blue-600 transition"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 border-t border-gray-800 pt-6 text-center text-gray-500 text-sm">
+            &copy; ২০২৬ স্বপ্না IT সেন্টার। সর্বস্বত্ব সংরক্ষিত।
+        </div>
+    </footer>
+
+    <!-- JavaScript for Mobile Menu & Interaction -->
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        function showSuccessMessage() {
+            const msg = document.getElementById('success-msg');
+            msg.classList.remove('hidden');
+            setTimeout(() => {
+                msg.classList.add('hidden');
+            }, 5000);
+        }
+    </script>
+</body>
+</html>
