@@ -25,6 +25,96 @@
         .hero-gradient {
             background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 50%, #60a5fa 100%);
         }
+        .team-section {
+            padding: 60px 20px;
+            background-color: #f8fafd;
+        }
+        .section-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        .section-header h2 {
+            font-size: 32px;
+            color: #1f2937;
+            margin-bottom: 8px;
+            font-weight: 700;
+        }
+        .section-header p {
+            font-size: 16px;
+            color: #6b7280;
+        }
+        .team-container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .team-card {
+            background: #ffffff;
+            border-radius: 16px;
+            padding: 40px 25px 30px 25px;
+            width: 320px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 45px;
+        }
+        .avatar-box {
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            overflow: hidden;
+            position: absolute;
+            top: -45px;
+            border: 4px solid #ffffff;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            background-color: #ffffff;
+        }
+        .avatar-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .name {
+            font-size: 20px;
+            font-weight: 700;
+            color: #111827;
+            margin-top: 15px;
+            margin-bottom: 6px;
+        }
+        .role {
+            font-size: 14px;
+            font-weight: 600;
+            color: #0d9488;
+            margin-bottom: 16px;
+        }
+        .quote {
+            font-size: 14px;
+            color: #4b5563;
+            line-height: 1.6;
+            font-style: italic;
+            margin-bottom: 25px;
+            flex-grow: 1;
+        }
+        .btn-card {
+            background-color: #4a0404;
+            color: #ffffff;
+            padding: 10px 24px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 600;
+            display: inline-block;
+            transition: background-color 0.3s ease;
+        }
+        .btn-card:hover {
+            background-color: #6b0606;
+        }
     </style>
 </head>
 <body class="bg-gray-50 text-gray-800 font-sans antialiased">
@@ -57,7 +147,6 @@
                     <span class="text-xs text-blue-600 font-medium tracking-wider">GRAPHICS & SOFTWARE TRAINING</span>
                 </div>
             </div>
-            
             <nav class="hidden md:flex items-center gap-8 font-medium">
                 <a href="#home" class="text-blue-600 hover:text-blue-800 transition">হোম</a>
                 <a href="#services" class="text-gray-600 hover:text-blue-600 transition">সেবাসমূহ</a>
@@ -65,18 +154,13 @@
                 <a href="#about" class="text-gray-600 hover:text-blue-600 transition">আমাদের সম্পর্কে</a>
                 <a href="#contact" class="text-gray-600 hover:text-blue-600 transition">যোগাযোগ</a>
             </nav>
-
             <div class="hidden md:block">
                 <a href="#contact" class="bg-blue-600 hover:bg-blue-700 text-white font-medium px-5 py-2.5 rounded-xl shadow-lg shadow-blue-500/20 transition transform hover:-translate-y-0.5">ভর্তি হোন</a>
             </div>
-
-            <!-- Mobile Menu Toggle Button -->
             <button id="menu-btn" class="md:hidden text-gray-700 focus:outline-none text-2xl">
                 <i class="fas fa-bars"></i>
             </button>
         </div>
-
-        <!-- Mobile Menu -->
         <div id="mobile-menu" class="hidden md:hidden bg-white border-t px-4 pt-2 pb-4 space-y-2">
             <a href="#home" class="block py-2 text-blue-600 font-medium">হোম</a>
             <a href="#services" class="block py-2 text-gray-600">সেবাসমূহ</a>
@@ -147,9 +231,7 @@
                 <h2 class="text-3xl sm:text-4xl font-bold text-gray-900">আপনার ব্যবসার জন্য সেরা আইটি সলিউশন</h2>
                 <p class="text-gray-600">আমরা আধুনিক প্রযুক্তি ব্যবহার করে আপনার ব্যবসার ডিজিটাল রূপান্তর নিশ্চিত করি।</p>
             </div>
-
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <!-- Service 1 -->
                 <div class="bg-gray-50 border border-gray-100 rounded-2xl p-8 shadow-sm hover:shadow-xl transition group">
                     <div class="w-16 h-16 rounded-2xl bg-blue-100 text-blue-600 flex items-center justify-center text-3xl mb-6 group-hover:bg-blue-600 group-hover:text-white transition">
                         <i class="fas fa-paint-brush"></i>
@@ -157,8 +239,6 @@
                     <h3 class="text-xl font-bold text-gray-900 mb-3">গ্রাফিক্স ডিজাইন</h3>
                     <p class="text-gray-600 leading-relaxed">লোগো ডিজাইন, ব্র্যান্ডিং, ব্যানার, সোশ্যাল মিডিয়া পোস্ট এবং প্রফেশনাল প্রিন্ট ডিজাইন সার্ভিস।</p>
                 </div>
-
-                <!-- Service 2 -->
                 <div class="bg-gray-50 border border-gray-100 rounded-2xl p-8 shadow-sm hover:shadow-xl transition group">
                     <div class="w-16 h-16 rounded-2xl bg-blue-100 text-blue-600 flex items-center justify-center text-3xl mb-6 group-hover:bg-blue-600 group-hover:text-white transition">
                         <i class="fas fa-code"></i>
@@ -166,8 +246,6 @@
                     <h3 class="text-xl font-bold text-gray-900 mb-3">সফটওয়্যার ডেভেলপমেন্ট</h3>
                     <p class="text-gray-600 leading-relaxed">কাস্টম সফটওয়্যার, ই-কমার্স ওয়েবসাইট এবং বিজনেস অটোমেশন সলিউশন তৈরি।</p>
                 </div>
-
-                <!-- Service 3 -->
                 <div class="bg-gray-50 border border-gray-100 rounded-2xl p-8 shadow-sm hover:shadow-xl transition group">
                     <div class="w-16 h-16 rounded-2xl bg-blue-100 text-blue-600 flex items-center justify-center text-3xl mb-6 group-hover:bg-blue-600 group-hover:text-white transition">
                         <i class="fas fa-graduation-cap"></i>
@@ -187,9 +265,7 @@
                 <h2 class="text-3xl sm:text-4xl font-bold text-gray-900">ক্যারিয়ার গড়ার জনপ্রিয় কোর্সসমূহ</h2>
                 <p class="text-gray-600">দক্ষ হয়ে উঠুন বর্তমান যুগের চাহিদাসম্পন্ন প্রযুক্তিতে।</p>
             </div>
-
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <!-- Course 1 -->
                 <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition border border-gray-100 flex flex-col">
                     <div class="bg-blue-600 text-white p-6 relative">
                         <span class="absolute top-4 right-4 bg-white/20 text-xs px-3 py-1 rounded-full font-medium">৩ মাস</span>
@@ -208,8 +284,6 @@
                         </div>
                     </div>
                 </div>
-
-                <!-- Course 2 -->
                 <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition border border-gray-100 flex flex-col">
                     <div class="bg-blue-700 text-white p-6 relative">
                         <span class="absolute top-4 right-4 bg-white/20 text-xs px-3 py-1 rounded-full font-medium">৬ মাস</span>
@@ -228,8 +302,6 @@
                         </div>
                     </div>
                 </div>
-
-                <!-- Course 3 -->
                 <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition border border-gray-100 flex flex-col">
                     <div class="bg-indigo-700 text-white p-6 relative">
                         <span class="absolute top-4 right-4 bg-white/20 text-xs px-3 py-1 rounded-full font-medium">৩ মাস</span>
@@ -296,6 +368,48 @@
         </div>
     </section>
 
+    <!-- Instructors Section -->
+    <section class="team-section">
+        <div class="section-header">
+            <h2>Our Course Instructors</h2>
+            <p>Our experienced and skilled instructors are always by your side</p>
+        </div>
+        <div class="team-container">
+            <!-- Sopna Khatun Card -->
+            <div class="team-card">
+                <div class="avatar-box">
+                    <img src="sopna.jpg" alt="Sopna Khatun">
+                </div>
+                <h3 class="name">Sopna Khatun</h3>
+                <p class="role">Doctor, Designer, Developer</p>
+                <p class="quote">"প্রযুক্তির এই যুগে নিজেকে স্কিলড না রাখাটাই সবচেয়ে বড় ঝুঁকি । টেকনোলজি শুধু ভবিষ্যৎ নয়, এটি আমাদের বর্তমান । বর্তমান ডিজিটাল দুনিয়ায় সবাইকে দক্ষ হওয়া উচিৎ ।"</p>
+                <a href="#contact" class="btn-card">কোর্সগুলো দেখুন &rarr;</a>
+            </div>
+
+            <!-- Instructor Card 2 -->
+            <div class="team-card">
+                <div class="avatar-box">
+                    <img src="abdullah.jpg" alt="Abdullah Amin">
+                </div>
+                <h3 class="name">Abdullah Amin</h3>
+                <p class="role">Designer, Instructor</p>
+                <p class="quote">"ডিসপ্লে এর প্রতিটি পিক্সেল একটি গল্প বলে। আপনার ইমাজিনেশনকে বাস্তব ডিজাইনে রুপ দিন"</p>
+                <a href="#contact" class="btn-card">কোর্সগুলো দেখুন &rarr;</a>
+            </div>
+
+            <!-- Instructor Card 3 -->
+            <div class="team-card">
+                <div class="avatar-box">
+                    <img src="junayed.jpg" alt="Junayed">
+                </div>
+                <h3 class="name">Junayed</h3>
+                <p class="role">Instructor</p>
+                <p class="quote">"সঠিক গাইডলাইন আর আপনার পরিশ্রমে আপনিও হতে পারেন একজন সফল প্রফেশনাল"</p>
+                <a href="#contact" class="btn-card">কোর্সগুলো দেখুন &rarr;</a>
+            </div>
+        </div>
+    </section>
+
     <!-- Contact Section -->
     <section id="contact" class="py-20 bg-gray-50 border-t border-gray-100">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -304,9 +418,7 @@
                 <h2 class="text-3xl sm:text-4xl font-bold text-gray-900">আমাদের সাথে যোগাযোগ করুন</h2>
                 <p class="text-gray-600">যেকোনো তথ্য বা কোর্সে ভর্তির জন্য আমাদের সাথে যোগাযোগ করতে নিচের ফর্মটি পূরণ করুন।</p>
             </div>
-
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
-                <!-- Contact Info -->
                 <div class="space-y-8">
                     <div class="flex items-start gap-4">
                         <div class="w-12 h-12 rounded-xl bg-blue-600 text-white flex items-center justify-center text-xl shrink-0 shadow-md">
@@ -336,8 +448,6 @@
                         </div>
                     </div>
                 </div>
-
-                <!-- Contact Form -->
                 <div class="bg-white p-8 rounded-3xl shadow-sm border border-gray-100">
                     <form onsubmit="event.preventDefault(); showSuccessMessage();" class="space-y-6">
                         <div>
@@ -363,153 +473,7 @@
             </div>
         </div>
     </section>
-<!DOCTYPE html>
-<html lang="bn">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Course Instructors - স্বপ্না IT সেন্টার</title>
-    <style>
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
 
-        body {
-            background-color: #f8fafd;
-        }
-
-        .instructor-section {
-            padding: 60px 20px;
-            text-align: center;
-        }
-
-        .section-header h2 {
-            font-size: 28px;
-            color: #1f2937;
-            margin-bottom: 8px;
-            font-weight: 700;
-        }
-
-        .section-header p {
-            font-size: 15px;
-            color: #6b7280;
-            margin-bottom: 50px;
-        }
-
-        .team-container {
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            flex-wrap: wrap;
-        }
-
-        .team-card {
-            background: #ffffff;
-            border-radius: 16px;
-            padding: 40px 25px 30px 25px;
-            width: 320px;
-            text-align: center;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-            position: relative;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin-top: 45px;
-        }
-
-        .avatar-box {
-            width: 90px;
-            height: 90px;
-            border-radius: 50%;
-            overflow: hidden;
-            position: absolute;
-            top: -45px;
-            border: 4px solid #ffffff;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            background-color: #ffffff;
-        }
-
-        .avatar-box img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        .name {
-            font-size: 20px;
-            font-weight: 700;
-            color: #111827;
-            margin-top: 15px;
-            margin-bottom: 6px;
-        }
-
-        .role {
-            font-size: 14px;
-            font-weight: 600;
-            color: #0d9488;
-            margin-bottom: 16px;
-        }
-
-        .quote {
-            font-size: 14px;
-            color: #4b5563;
-            line-height: 1.6;
-            font-style: italic;
-            margin-bottom: 25px;
-            flex-grow: 1;
-        }
-
-        .btn {
-            background-color: #4a0404;
-            color: #ffffff;
-            padding: 10px 24px;
-            border-radius: 8px;
-            text-decoration: none;
-            font-size: 14px;
-            font-weight: 600;
-            display: inline-block;
-            transition: background-color 0.3s ease;
-        }
-
-        .btn:hover {
-            background-color: #6b0606;
-        }
-    </style>
-</head>
-<body>
-
-    <section class="instructor-section">
-        <!-- হেডার অংশ -->
-        <div class="section-header">
-            <h2>Our Course Instructors</h2>
-            <p>Our experienced and skilled instructors are always by your side</p>
-        </div>
-
-        <!-- কার্ড কন্টেইনার -->
-        <div class="team-container">
-            
-            <!-- Sopna Khatun Card -->
-            <div class="team-card">
-                <div class="avatar-box">
-                    <!-- আপনার ছবির ফাইল নেম বসাবেন -->
-                    <img src="sopna-photo.jpg" alt="Sopna Khatun"> 
-                </div>
-                <h3 class="name">Sopna Khatun</h3>
-                <p class="role">Doctor, Designer, Developer</p>
-                <p class="quote">"প্রযুক্তির এই যুগে নিজেকে স্কিলড না রাখাটাই সবচেয়ে বড় ঝুঁকি । টেকনোলজি শুধু ভবিষ্যৎ নয়, এটি আমাদের বর্তমান । বর্তমান ডিজিটাল দুনিয়ায় সবাইকে দক্ষ হওয়া উচিৎ ।"</p>
-                <a href="#" class="btn">কোর্সগুলো দেখুন &rarr;</a>
-            </div>
-
-            <!-- প্রয়োজন অনুসারে এখানে আরও ইন্সট্রাক্টর কার্ড যোগ করতে পারেন -->
-
-        </div>
-    </section>
-
-</body>
-</html>
     <!-- Footer -->
     <footer class="bg-gray-900 text-white py-12">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
@@ -544,11 +508,9 @@
     <script>
         const menuBtn = document.getElementById('menu-btn');
         const mobileMenu = document.getElementById('mobile-menu');
-
         menuBtn.addEventListener('click', () => {
             mobileMenu.classList.toggle('hidden');
         });
-
         function showSuccessMessage() {
             const msg = document.getElementById('success-msg');
             msg.classList.remove('hidden');
