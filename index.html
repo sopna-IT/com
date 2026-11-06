@@ -54,7 +54,7 @@
         .team-card {
             background: #ffffff;
             border-radius: 16px;
-            padding: 40px 25px 30px 25px;
+            padding: 50px 25px 30px 25px;
             width: 320px;
             text-align: center;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
@@ -65,14 +65,14 @@
             margin-top: 45px;
         }
         .avatar-box {
-            width: 90px;
-            height: 90px;
+            width: 100px;
+            height: 100px;
             border-radius: 50%;
             overflow: hidden;
             position: absolute;
-            top: -45px;
+            top: -50px;
             border: 4px solid #ffffff;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
             background-color: #ffffff;
         }
         .avatar-box img {
@@ -115,6 +115,18 @@
         .btn-card:hover {
             background-color: #6b0606;
         }
+        @keyframes marquee {
+            0% { transform: translateX(0%); }
+            100% { transform: translateX(-50%); }
+        }
+        .animate-marquee {
+            display: flex;
+            width: 200%;
+            animation: marquee 25s linear infinite;
+        }
+        .animate-marquee:hover {
+            animation-play-state: paused;
+        }
     </style>
 </head>
 <body class="bg-gray-50 text-gray-800 font-sans antialiased">
@@ -150,6 +162,7 @@
             <nav class="hidden md:flex items-center gap-8 font-medium">
                 <a href="#home" class="text-blue-600 hover:text-blue-800 transition">হোম</a>
                 <a href="#services" class="text-gray-600 hover:text-blue-600 transition">সেবাসমূহ</a>
+                <a href="#themes" class="text-gray-600 hover:text-blue-600 transition">ওয়েবসাইট থিম</a>
                 <a href="#courses" class="text-gray-600 hover:text-blue-600 transition">কোর্সসমূহ</a>
                 <a href="#about" class="text-gray-600 hover:text-blue-600 transition">আমাদের সম্পর্কে</a>
                 <a href="#contact" class="text-gray-600 hover:text-blue-600 transition">যোগাযোগ</a>
@@ -164,6 +177,7 @@
         <div id="mobile-menu" class="hidden md:hidden bg-white border-t px-4 pt-2 pb-4 space-y-2">
             <a href="#home" class="block py-2 text-blue-600 font-medium">হোম</a>
             <a href="#services" class="block py-2 text-gray-600">সেবাসমূহ</a>
+            <a href="#themes" class="block py-2 text-gray-600">ওয়েবসাইট থিম</a>
             <a href="#courses" class="block py-2 text-gray-600">কোর্সসমূহ</a>
             <a href="#about" class="block py-2 text-gray-600">আমাদের সম্পর্কে</a>
             <a href="#contact" class="block py-2 text-gray-600">যোগাযোগ</a>
@@ -223,6 +237,21 @@
         </div>
     </section>
 
+    <!-- Announcement Bar -->
+    <div class="bg-yellow-400 text-blue-950 font-bold border-y-4 border-blue-900 py-3 overflow-hidden relative shadow-md">
+        <div class="flex items-center max-w-7xl mx-auto px-4">
+            <div class="bg-blue-900 text-yellow-300 px-4 py-1 rounded-lg text-sm uppercase tracking-wider shrink-0 mr-4 z-10 shadow">
+                Announcement
+            </div>
+            <div class="overflow-hidden w-full relative">
+                <div class="animate-marquee whitespace-nowrap flex items-center gap-12 text-sm sm:text-base">
+                    <span>🎯 সালাম ও শুভেচ্ছা সবাইকে..! স্বপ্না IT সেন্টার-এর পক্ষ থেকে আপনাদের সকলকে জানাই আন্তরিক স্বাগতম ও শুভেচ্ছা। 📢 বিশাল সুখবর! মাত্র ২২৫০ টাকায় স্কুল, কলেজ ও মাদ্রাসার ওয়েবসাইট..!</span>
+                    <span>🎯 সালাম ও শুভেচ্ছা সবাইকে..! স্বপ্না IT সেন্টার-এর পক্ষ থেকে আপনাদের সকলকে জানাই আন্তরিক স্বাগতম ও শুভেচ্ছা। 📢 বিশাল সুখবর! মাত্র ২২৫০ টাকায় স্কুল, কলেজ ও মাদ্রাসার ওয়েবসাইট..!</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Services Section -->
     <section id="services" class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -257,113 +286,70 @@
         </div>
     </section>
 
-    <!-- Courses Section -->
-    <section id="courses" class="py-20 bg-gray-50">
+    <!-- Theme Categories & Demos Section -->
+    <section id="themes" class="py-20 bg-slate-50 border-t border-b border-gray-200">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-2xl mx-auto space-y-3 mb-16">
-                <span class="text-blue-600 font-semibold tracking-wider text-sm uppercase">আমাদের কোর্সসমূহ</span>
-                <h2 class="text-3xl sm:text-4xl font-bold text-gray-900">ক্যারিয়ার গড়ার জনপ্রিয় কোর্সসমূহ</h2>
-                <p class="text-gray-600">দক্ষ হয়ে উঠুন বর্তমান যুগের চাহিদাসম্পন্ন প্রযুক্তিতে।</p>
+                <span class="text-blue-600 font-semibold tracking-wider text-sm uppercase">রেডিমেড ওয়েবসাইট থিম</span>
+                <h2 class="text-3xl sm:text-4xl font-bold text-gray-900">ব্যবসার জন্য সেরা ওয়েবসাইট থিম ও ডেমো</h2>
+                <p class="text-gray-600">আপনার ক্যাটাগরি বেছে নিন এবং পছন্দমতো রেডিমেড রেসপন্সিভ থিম দিয়ে এখনই লাইভ করুন।</p>
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition border border-gray-100 flex flex-col">
-                    <div class="bg-blue-600 text-white p-6 relative">
-                        <span class="absolute top-4 right-4 bg-white/20 text-xs px-3 py-1 rounded-full font-medium">৩ মাস</span>
-                        <h3 class="text-xl font-bold">প্রফেশনাল গ্রাফিক্স ডিজাইন</h3>
-                        <p class="text-blue-100 text-sm mt-1">ইলাস্ট্রেটর, ফটোশপ ও ব্র্যান্ডিং</p>
-                    </div>
-                    <div class="p-6 flex-1 flex flex-col justify-between space-y-6">
-                        <ul class="space-y-3 text-sm text-gray-600">
-                            <li><i class="fas fa-check text-blue-600 mr-2"></i> লোগো ও ব্র্যান্ড আইডেন্টিটি</li>
-                            <li><i class="fas fa-check text-blue-600 mr-2"></i> সোশ্যাল মিডিয়া ব্যানার ডিজাইন</li>
-                            <li><i class="fas fa-check text-blue-600 mr-2"></i> ফ্রিল্যান্সিং গাইডলাইন</li>
-                        </ul>
-                        <div class="pt-4 border-t flex items-center justify-between">
-                            <span class="text-lg font-bold text-blue-600">ফি: ৫,০০০৳</span>
-                            <a href="#contact" class="bg-blue-600 hover:bg-blue-700 text-white text-sm px-4 py-2 rounded-xl transition font-medium">ভর্তি হন</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition border border-gray-100 flex flex-col">
-                    <div class="bg-blue-700 text-white p-6 relative">
-                        <span class="absolute top-4 right-4 bg-white/20 text-xs px-3 py-1 rounded-full font-medium">৬ মাস</span>
-                        <h3 class="text-xl font-bold">ওয়েব ডিজাইন ও ডেভেলপমেন্ট</h3>
-                        <p class="text-blue-100 text-sm mt-1">HTML, CSS, JavaScript, PHP</p>
-                    </div>
-                    <div class="p-6 flex-1 flex flex-col justify-between space-y-6">
-                        <ul class="space-y-3 text-sm text-gray-600">
-                            <li><i class="fas fa-check text-blue-600 mr-2"></i> রেসপন্সিভ ওয়েব ডিজাইন</li>
-                            <li><i class="fas fa-check text-blue-600 mr-2"></i> ওয়ার্ডপ্রেস থিম কাস্টমাইজেশন</li>
-                            <li><i class="fas fa-check text-blue-600 mr-2"></i> লাইভ প্রজেক্ট ওয়ার্ক</li>
-                        </ul>
-                        <div class="pt-4 border-t flex items-center justify-between">
-                            <span class="text-lg font-bold text-blue-600">ফি: ১০,০০০৳</span>
-                            <a href="#contact" class="bg-blue-600 hover:bg-blue-700 text-white text-sm px-4 py-2 rounded-xl transition font-medium">ভর্তি হন</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition border border-gray-100 flex flex-col">
-                    <div class="bg-indigo-700 text-white p-6 relative">
-                        <span class="absolute top-4 right-4 bg-white/20 text-xs px-3 py-1 rounded-full font-medium">৩ মাস</span>
-                        <h3 class="text-xl font-bold">ডিজিটাল মার্কেটিং</h3>
-                        <p class="text-indigo-100 text-sm mt-1">SEO, FB Ads & Social Media</p>
-                    </div>
-                    <div class="p-6 flex-1 flex flex-col justify-between space-y-6">
-                        <ul class="space-y-3 text-sm text-gray-600">
-                            <li><i class="fas fa-check text-blue-600 mr-2"></i> ফেসবুক ও ইনস্টাগ্রাম মার্কেটিং</li>
-                            <li><i class="fas fa-check text-blue-600 mr-2"></i> সার্চ ইঞ্জিন অপ্টিমাইজেশন (SEO)</li>
-                            <li><i class="fas fa-check text-blue-600 mr-2"></i> লিড জেনারেশন ও স্ট্র্যাটেজি</li>
-                        </ul>
-                        <div class="pt-4 border-t flex items-center justify-between">
-                            <span class="text-lg font-bold text-blue-600">ফি: ৬,০০০৳</span>
-                            <a href="#contact" class="bg-blue-600 hover:bg-blue-700 text-white text-sm px-4 py-2 rounded-xl transition font-medium">ভর্তি হন</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- About Section -->
-    <section id="about" class="py-20 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div class="space-y-6">
-                <span class="text-blue-600 font-semibold tracking-wider text-sm uppercase">আমাদের সম্পর্কে</span>
-                <h2 class="text-3xl sm:text-4xl font-bold text-gray-900">স্বপ্না আইটি সেন্টার - দক্ষ ক্যারিয়ার গড়ার বিশ্বস্ত ঠিকানা</h2>
-                <p class="text-gray-600 leading-relaxed">
-                    আমরা দীর্ঘ évek ধরে সফলভাবে আইটি সেবা প্রদান এবং শিক্ষার্থীদের প্রফেশনাল স্কিল ডেভেলপমেন্ট ট্রেনিং দিয়ে আসছি। আমাদের রয়েছে অভিজ্ঞ মেন্টর প্যানেল এবং আধুনিক ল্যাব সুবিধা।
-                </p>
-                <div class="grid grid-cols-2 gap-6 pt-4">
-                    <div class="bg-blue-50 p-4 rounded-2xl border border-blue-100">
-                        <h4 class="text-3xl font-bold text-blue-600 mb-1">৫০০+</h4>
-                        <p class="text-gray-600 text-sm">সফল শিক্ষার্থী</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Theme Card 1: E-Commerce -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition border border-gray-100 flex flex-col group">
+                    <div class="relative overflow-hidden h-48 bg-gray-200">
+                        <img src="https://images.unsplash.com/photo-1472851294608-062f824d29cc?auto=format&fit=crop&w=600&q=80" alt="E-Commerce Theme Demo" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                        <span class="absolute top-3 left-3 bg-blue-600 text-white text-xs px-3 py-1 rounded-full font-semibold">ই-কমার্স</span>
                     </div>
-                    <div class="bg-blue-50 p-4 rounded-2xl border border-blue-100">
-                        <h4 class="text-3xl font-bold text-blue-600 mb-1">১০০+</h4>
-                        <p class="text-gray-600 text-sm">প্রজেক্ট সম্পন্ন</p>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">স্মার্ট ই-কমার্স স্টোর ডেমো</h3>
+                            <p class="text-gray-600 text-sm mb-4">অনলাইন শপ, প্রোডাক্ট ফিল্টারিং, পেমেন্ট গেটওয়ে এবং ইনভেন্টরি ম্যানেজমেন্ট সিস্টেম সহ সম্পূর্ণ থিম।</p>
+                        </div>
+                        <div class="flex items-center justify-between pt-4 border-t border-gray-100">
+                            <span class="text-sm font-semibold text-gray-500"><i class="fas fa-star text-yellow-400 mr-1"></i> ৪.৯ (৪৫+ সেল)</span>
+                            <a href="#contact" class="inline-flex items-center text-sm font-bold text-blue-600 hover:text-blue-800">লাইভ ডেমো <i class="fas fa-arrow-right ml-1"></i></a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="bg-gradient-to-br from-blue-600 to-indigo-800 p-8 sm:p-12 rounded-3xl text-white shadow-xl space-y-6">
-                <h3 class="text-2xl font-bold">কেন আমাদের নির্বাচন করবেন?</h3>
-                <ul class="space-y-4">
-                    <li class="flex items-start gap-3">
-                        <i class="fas fa-check-circle text-blue-300 mt-1 text-lg"></i>
-                        <span>১০০% প্র্যাকটিক্যাল ও হ্যান্ডস-অন ট্রেনিং ব্যবস্থা।</span>
-                    </li>
-                    <li class="flex items-start gap-3">
-                        <i class="fas fa-check-circle text-blue-300 mt-1 text-lg"></i>
-                        <span>অভিজ্ঞ ও প্রফেশনাল মেন্টরদের মাধ্যমে ক্লাস পরিচালনা।</span>
-                    </li>
-                    <li class="flex items-start gap-3">
-                        <i class="fas fa-check-circle text-blue-300 mt-1 text-lg"></i>
-                        <span>কোর্স শেষে ইন্টার্নশিপ ও জব প্লেসমেন্টের সুযোগ।</span>
-                    </li>
-                    <li class="flex items-start gap-3">
-                        <i class="fas fa-check-circle text-blue-300 mt-1 text-lg"></i>
-                        <span>লাইফটাইম সাপোর্ট ও আপডেট মেটেরিয়ালস।</span>
-                    </li>
-                </ul>
+
+                <!-- Theme Card 2: Educational Institution -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition border border-gray-100 flex flex-col group border-2 border-yellow-400">
+                    <div class="relative overflow-hidden h-48 bg-gray-200">
+                        <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=600&q=80" alt="Educational Theme Demo" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                        <span class="absolute top-3 left-3 bg-emerald-600 text-white text-xs px-3 py-1 rounded-full font-semibold">শিক্ষা প্রতিষ্ঠান</span>
+                        <span class="absolute top-3 right-3 bg-red-600 text-white text-xs px-2.5 py-1 rounded-full font-bold animate-pulse">বিশেষ অফার: ২২৫০৳</span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">স্কুল, কলেজ ও মাদ্রাসা পোর্টাল ডেমো</h3>
+                            <p class="text-gray-600 text-sm mb-4">নোটিশ বোর্ড, রেজাল্ট সিস্টেম, শিক্ষক ও ছাত্র-ছাত্রীদের ডিজিটাল প্রোফাইল ম্যানেজমেন্টের পূর্ণাঙ্গ থিম।</p>
+                        </div>
+                        <div class="flex items-center justify-between pt-4 border-t border-gray-100">
+                            <span class="text-sm font-semibold text-gray-500"><i class="fas fa-star text-yellow-400 mr-1"></i> ৫.০ (৮০+ সেল)</span>
+                            <a href="#contact" class="inline-flex items-center text-sm font-bold text-blue-600 hover:text-blue-800">লাইভ ডেমো <i class="fas fa-arrow-right ml-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Theme Card 3: Corporate Business -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-2xl transition border border-gray-100 flex flex-col group">
+                    <div class="relative overflow-hidden h-48 bg-gray-200">
+                        <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=600&q=80" alt="Corporate Business Theme Demo" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                        <span class="absolute top-3 left-3 bg-purple-600 text-white text-xs px-3 py-1 rounded-full font-semibold">করপোরেট এজেন্সী</span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">বিজনেস ও সার্ভিস এজেন্সী ডেমো</h3>
+                            <p class="text-gray-600 text-sm mb-4">প্রফেশনাল লুক, পোর্টফোলিও শোকেস, সার্ভিস লিস্ট ও কাস্টমার রিভিউ ফিচারের বিজনেস থিম।</p>
+                        </div>
+                        <div class="flex items-center justify-between pt-4 border-t border-gray-100">
+                            <span class="text-sm font-semibold text-gray-500"><i class="fas fa-star text-yellow-400 mr-1"></i> ৪.৮ (৫০+ সেল)</span>
+                            <a href="#contact" class="inline-flex items-center text-sm font-bold text-blue-600 hover:text-blue-800">লাইভ ডেমো <i class="fas fa-arrow-right ml-1"></i></a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -378,34 +364,34 @@
             <!-- Sopna Khatun Card -->
             <div class="team-card">
                 <div class="avatar-box">
-                    <img src="sopna.jpg" alt="Sopna Khatun">
+                    <img src="Sopna Khatun.jpg" onerror="this.src='sopna.jpeg'" alt="Sopna Khatun">
                 </div>
                 <h3 class="name">Sopna Khatun</h3>
                 <p class="role">Doctor, Designer, Developer</p>
                 <p class="quote">"প্রযুক্তির এই যুগে নিজেকে স্কিলড না রাখাটাই সবচেয়ে বড় ঝুঁকি । টেকনোলজি শুধু ভবিষ্যৎ নয়, এটি আমাদের বর্তমান । বর্তমান ডিজিটাল দুনিয়ায় সবাইকে দক্ষ হওয়া উচিৎ ।"</p>
-                <a href="#contact" class="btn-card">কোর্সগুলো দেখুন &rarr;</a>
+                <a href="#courses" class="btn-card">কোর্সগুলো দেখুন &rarr;</a>
             </div>
 
             <!-- Instructor Card 2 -->
             <div class="team-card">
                 <div class="avatar-box">
-                    <img src="abdullah.jpg" alt="Abdullah Amin">
+                    <img src="abdullah.jpg" onerror="this.src='abdullah_3.jpg'" alt="Abdullah Amin">
                 </div>
                 <h3 class="name">Abdullah Amin</h3>
                 <p class="role">Designer, Instructor</p>
                 <p class="quote">"ডিসপ্লে এর প্রতিটি পিক্সেল একটি গল্প বলে। আপনার ইমাজিনেশনকে বাস্তব ডিজাইনে রুপ দিন"</p>
-                <a href="#contact" class="btn-card">কোর্সগুলো দেখুন &rarr;</a>
+                <a href="#courses" class="btn-card">কোর্সগুলো দেখুন &rarr;</a>
             </div>
 
             <!-- Instructor Card 3 -->
             <div class="team-card">
                 <div class="avatar-box">
-                    <img src="junayed.jpg" alt="Junayed">
+                    <img src="junayed.jpg" onerror="this.src='junayed_3.jpg'" alt="Junayed">
                 </div>
                 <h3 class="name">Junayed</h3>
                 <p class="role">Instructor</p>
                 <p class="quote">"সঠিক গাইডলাইন আর আপনার পরিশ্রমে আপনিও হতে পারেন একজন সফল প্রফেশনাল"</p>
-                <a href="#contact" class="btn-card">কোর্সগুলো দেখুন &rarr;</a>
+                <a href="#courses" class="btn-card">কোর্সগুলো দেখুন &rarr;</a>
             </div>
         </div>
     </section>
@@ -486,6 +472,7 @@
                 <ul class="space-y-2 text-sm text-gray-400">
                     <li><a href="#home" class="hover:text-white transition">হোম</a></li>
                     <li><a href="#services" class="hover:text-white transition">সেবাসমূহ</a></li>
+                    <li><a href="#themes" class="hover:text-white transition">ওয়েবসাইট থিম</a></li>
                     <li><a href="#courses" class="hover:text-white transition">কোর্সসমূহ</a></li>
                     <li><a href="#contact" class="hover:text-white transition">যোগাযোগ</a></li>
                 </ul>
