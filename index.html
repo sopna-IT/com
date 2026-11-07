@@ -54,7 +54,7 @@
         .team-card {
             background: #ffffff;
             border-radius: 16px;
-            padding: 40px 25px 30px 25px;
+            padding: 50px 25px 30px 25px;
             width: 320px;
             text-align: center;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
@@ -72,8 +72,8 @@
             position: absolute;
             top: -45px;
             border: 4px solid #ffffff;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            background-color: #ffffff;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+            background-color: #e5e7eb;
         }
         .avatar-box img {
             width: 100%;
@@ -114,6 +114,18 @@
         }
         .btn-card:hover {
             background-color: #6b0606;
+        }
+        @keyframes marquee {
+            0% { transform: translateX(0%); }
+            100% { transform: translateX(-50%); }
+        }
+        .animate-marquee {
+            display: flex;
+            width: 200%;
+            animation: marquee 25s linear infinite;
+        }
+        .animate-marquee:hover {
+            animation-play-state: paused;
         }
     </style>
 </head>
@@ -158,18 +170,6 @@
             <div class="hidden md:block">
                 <a href="#contact" class="bg-blue-600 hover:bg-blue-700 text-white font-medium px-5 py-2.5 rounded-xl shadow-lg shadow-blue-500/20 transition transform hover:-translate-y-0.5">ভর্তি হোন</a>
             </div>
-            <button id="menu-btn" class="md:hidden text-gray-700 focus:outline-none text-2xl">
-                <i class="fas fa-bars"></i>
-            </button>
-        </div>
-        <div id="mobile-menu" class="hidden md:hidden bg-white border-t px-4 pt-2 pb-4 space-y-2">
-            <a href="#home" class="block py-2 text-blue-600 font-medium">হোম</a>
-            <a href="#services" class="block py-2 text-gray-600">সেবাসমূহ</a>
-            <a href="#themes" class="block py-2 text-gray-600">ওয়েবসাইট থিম</a>
-            <a href="#courses" class="block py-2 text-gray-600">কোর্সসমূহ</a>
-            <a href="#about" class="block py-2 text-gray-600">আমাদের সম্পর্কে</a>
-            <a href="#contact" class="block py-2 text-gray-600">যোগাযোগ</a>
-            <a href="#contact" class="block text-center bg-blue-600 text-white py-2.5 rounded-xl mt-2 font-medium">ভর্তি হোন</a>
         </div>
     </header>
 
@@ -195,6 +195,23 @@
                     </a>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- Announcement Bar -->
+    <div class="bg-yellow-400 text-blue-950 font-bold border-y-4 border-blue-900 py-3 overflow-hidden relative shadow-md">
+        <div class="flex items-center max-w-7xl mx-auto px-4">
+            <div class="bg-blue-900 text-yellow-300 px-4 py-1 rounded-lg text-sm uppercase tracking-wider shrink-0 mr-4 z-10 shadow">
+                Announcement
+            </div>
+            <div class="overflow-hidden w-full relative">
+                <div class="animate-marquee whitespace-nowrap flex items-center gap-12 text-sm sm:text-base">
+                    <span>🎯 সালাম ও শুভেচ্ছা সবাইকে..! স্বপ্না IT সেন্টার-এর পক্ষ থেকে আপনাদের সকলকে জানাই আন্তরিক স্বাগতম ও শুভেচ্ছা। 📢 বিশাল সুখবর! মাত্র ২২৫০ টাকায় স্কুল, কলেজ ও মাদ্রাসার ওয়েবসাইট..!</span>
+                    <span>🎯 সালাম ও শুভেচ্ছা সবাইকে..! স্বপ্না IT সেন্টার-এর পক্ষ থেকে আপনাদের সকলকে জানাই আন্তরিক স্বাগতম ও শুভেচ্ছা। 📢 বিশাল সুখবর! মাত্র ২২৫০ টাকায় স্কুল, কলেজ ও মাদ্রাসার ওয়েবসাইট..!</span>
+                </div>
+            </div>
+        </div>
+    </div>
             <div class="flex justify-center">
                 <div class="bg-white/10 backdrop-blur-md p-8 rounded-3xl border border-white/20 shadow-2xl max-w-md w-full space-y-6">
                     <div class="flex items-center gap-4">
